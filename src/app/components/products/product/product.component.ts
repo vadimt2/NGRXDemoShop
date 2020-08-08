@@ -2,6 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AddToCart, RemoveFromCart } from '../../../store';
 import { IProduct } from './../../../core';
+import { TooltipPosition } from '@angular/material/tooltip';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-product',
@@ -13,7 +15,9 @@ export class ProductComponent implements OnInit {
   constructor(private store: Store<{ items: []; cart: [] }>) { }
 
   public inCart:boolean = false;
-  @Input() product: IProduct
+  @Input() product: IProduct;
+  positionOptions: TooltipPosition[] = ['above'];
+  position = new FormControl(this.positionOptions[0]);
 
   ngOnInit(): void {
   }

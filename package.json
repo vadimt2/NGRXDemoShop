@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run NRGSoftTask:serve-ssr",
-    "serve:ssr": "node dist/NRGSoftTask/server/main.js",
-    "build:ssr": "ng build --prod && ng run NRGSoftTask:server:production",
-    "prerender": "ng run NRGSoftTask:prerender"
+    "dev:ssr": "ng run NGRXDemoShop:serve-ssr",
+    "serve:ssr": "node dist/NGRXDemoShop/server/main.js",
+    "build:ssr": "ng build --prod && ng run NGRXDemoShop:server:production",
+    "prerender": "ng run NGRXDemoShop:prerender"
   },
   "private": true,
   "dependencies": {

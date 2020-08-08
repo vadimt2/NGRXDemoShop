@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "NRGSoftTask": {
+    "NGRXDemoShop": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/NRGSoftTask/browser",
+            "outputPath": "dist/NGRXDemoShop/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "NRGSoftTask:build"
+            "browserTarget": "NGRXDemoShop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "NRGSoftTask:build:production"
+              "browserTarget": "NGRXDemoShop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "NRGSoftTask:build"
+            "browserTarget": "NGRXDemoShop:build"
           }
         },
         "test": {
@@ -122,18 +122,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "NRGSoftTask:serve"
+            "devServerTarget": "NGRXDemoShop:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "NRGSoftTask:serve:production"
+              "devServerTarget": "NGRXDemoShop:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/NRGSoftTask/server",
+            "outputPath": "dist/NGRXDemoShop/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -154,21 +154,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "NRGSoftTask:build",
-            "serverTarget": "NRGSoftTask:server"
+            "browserTarget": "NGRXDemoShop:build",
+            "serverTarget": "NGRXDemoShop:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "NRGSoftTask:build:production",
-              "serverTarget": "NRGSoftTask:server:production"
+              "browserTarget": "NGRXDemoShop:build:production",
+              "serverTarget": "NGRXDemoShop:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "NRGSoftTask:build:production",
-            "serverTarget": "NRGSoftTask:server:production",
+            "browserTarget": "NGRXDemoShop:build:production",
+            "serverTarget": "NGRXDemoShop:server:production",
             "routes": [
               "/"
             ]
@@ -180,5 +180,5 @@
       }
     }
   },
-  "defaultProject": "NRGSoftTask"
+  "defaultProject": "NGRXDemoShop"
 }

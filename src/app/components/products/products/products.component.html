@@ -1,1 +1,7 @@
-<p>products works!</p>
+    <div class="container-fluid px-5 py-5 mx-auto">
+        <div class="row justify-content-between px-3">
+            <div class="block text-center" *ngFor="let product of products, let i=index"> 
+                <app-product [product]="product"></app-product>
+            </div>
+        </div>
+    </div>
